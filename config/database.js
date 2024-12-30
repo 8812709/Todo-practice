@@ -9,7 +9,7 @@ const dbconnect=(()=>{
     mongoose.connect(process.env.DATABASE_URL)
     .then(()=>{console.log("database connected successfully")})
     .catch((error)=>{
-        console.log("some error occured while connecting")
+        console.log("some error occured while connecting",error)
         process.exit()
     })
     

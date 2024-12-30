@@ -26,8 +26,9 @@ exports.createTodo=async(req,res)=>{
         res.status(500).json(
         {
             success:false
-            ,message:"internal server error"
-        }
-        )
+            ,data:"internal server error",
+            message:error.message
+
+        })
     }
 }

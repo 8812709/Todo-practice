@@ -12,7 +12,7 @@ app.listen(process.env.PORT || 4000,()=>{
     console.log(`server is started successfully at ${process.env.PORT}`)
 })
 
-//importing todoroutes here
+//importing all the todoroutes here
 const todoRoutes=require("./routes/todos")
 //mount the api routes
 app.use("/api/v1",todoRoutes)
